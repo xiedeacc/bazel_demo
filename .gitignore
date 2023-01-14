@@ -1,0 +1,5 @@
+.cache/
+tags
+bazel-*
+bazel-bin/
+compile_commands.json

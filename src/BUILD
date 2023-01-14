@@ -16,8 +16,8 @@ cc_library(
 )
 
 cc_binary(
-    name = "ranking",
-    srcs = ["ranking.cc"],
+    name = "bazel_demo",
+    srcs = ["main.cc"],
     defines = [
         "BOOST_THREAD_BUILD_LIB=1",
         "BOOST_THREAD_PLATFORM_PTHREAD",
@@ -32,7 +32,6 @@ cc_binary(
         ":file_util",
         "@boost//:algorithm",
         "@boost//:filesystem",
-        #"@com_github_gperftools_gperftools//:gperftools",
         "@glog",
     ],
 )
